@@ -13,10 +13,12 @@ const Filters = () => {
                 <select
                   className='form-select'
                   aria-label='Default select example'>
-                  <option default>Open this select menu</option>
-                  <option value='1'>One</option>
-                  <option value='2'>Two</option>
-                  <option value='3'>Three</option>
+                  <option default>Select a field</option>
+                  <option value='1'>Project Managers</option>
+                  <option value='2'>Engineers</option>
+                  <option value='3'>UX/UI Designers</option>
+                  <option value='4'>Data Scientists</option>
+                  <option value='5'>Marketing</option>
                 </select>
               </div>
               <div className='card'>
@@ -27,9 +29,11 @@ const Filters = () => {
                     multiple
                     aria-label='multiple select example'>
                     <option default>Select one or more options</option>
-                    <option value='1'>One</option>
-                    <option value='2'>Two</option>
-                    <option value='3'>Three</option>
+                    <option value='1'>Gender</option>
+                    <option value='2'>Job Title</option>
+                    <option value='3'>Seniority</option>
+                    <option value='4'>Country</option>
+                    <option value='5'>Age</option>
                   </select>
                 </div>
                 <div>

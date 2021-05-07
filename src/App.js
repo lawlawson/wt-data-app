@@ -1,7 +1,8 @@
-import './App.css';
 import Targets from './components/Targets';
 import Filters from './components/Filters';
 import Metrics from './components/Metrics';
+
+import './App.css';
 
 function App() {
   return (

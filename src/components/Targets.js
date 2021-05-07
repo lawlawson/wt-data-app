@@ -11,35 +11,34 @@ const Targets = () => {
               <div className='card-body'>
                 <div className='dropdown'>
                   <button
-                    className='btn btn-danger dropdown-toggle'
+                    className='btn btn-danger dropdown-toggle'
                     type='button'
                     id='dropdownMenuButton1'
                     data-bs-toggle='dropdown'
                     aria-expanded='false'>
-                    Targets
+                    Target
                   </button>
                   <ul
                     className='dropdown-menu'
                     aria-labelledby='dropdownMenuButton1'>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://github.com/lawlawson'>
-                        Target 1
+                      <a className='dropdown-item' href='#'>
+                        Quarter 1
                       </a>
                     </li>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://github.com/lawlawson'>
-                        Target 2
+                      <a className='dropdown-item' href='#'>
+                        Quarter 2
                       </a>
                     </li>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://github.com/lawlawson'>
-                        Target 3
+                      <a className='dropdown-item' href='#'>
+                        Quarter 3
+                      </a>
+                    </li>
+                    <li>
+                      <a className='dropdown-item' href='#'>
+                        Quarter 4
                       </a>
                     </li>
                   </ul>
