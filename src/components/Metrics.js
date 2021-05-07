@@ -56,7 +56,7 @@ const data = [
   },
 ];
 
-export default function Metrics() {
+export const Metrics = () => {
   return (
     <>
       <div className='container'>
@@ -95,4 +95,4 @@ export default function Metrics() {
       </div>
     </>
   );
-}
+};
