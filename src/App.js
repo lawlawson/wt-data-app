@@ -1,5 +1,6 @@
 import './App.css';
 import Targets from './components/Targets';
+// import Metrics from './components/Metrics';
 
 function App() {
   return (
