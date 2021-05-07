@@ -1,14 +1,15 @@
 import './App.css';
-import Targets from './components/Targets';
+// import Targets from './components/Targets';
 import Filters from './components/Filters';
-// import Metrics from './components/Metrics';
+import Metrics from './components/Metrics';
 
 function App() {
   return (
     <div className='App'>
       <h1>WT Data App</h1>
-      <Targets />
+      {/* <Targets /> */}
       <Filters />
+      <Metrics />
     </div>
   );
 }

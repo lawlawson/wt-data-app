@@ -48,7 +48,9 @@ function Filters() {
                   <textarea
                     className='form-control'
                     placeholder='Leave a comment here'
-                    id='floatingTextarea'></textarea>
+                    id='floatingTextarea'
+                    value='Hello ano'
+                  />
                   <label htmlFor='floatingTextarea'>Data output</label>
                 </div>
               </div>
