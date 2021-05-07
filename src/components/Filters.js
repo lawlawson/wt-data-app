@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/Filters.css';
 
-function Filters() {
+const Filters = () => {
   return (
     <div>
       <div className='container'>
@@ -49,7 +49,8 @@ function Filters() {
                     className='form-control'
                     placeholder='Leave a comment here'
                     id='floatingTextarea'
-                    value='Hello ano'
+                    value='Some data should be dynamically rendered here'
+                    readOnly={true}
                   />
                   <label htmlFor='floatingTextarea'>Data output</label>
                 </div>
@@ -60,6 +61,6 @@ function Filters() {
       </div>
     </div>
   );
-}
+};
 
 export default Filters;
