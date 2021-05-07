@@ -22,17 +22,23 @@ function Targets() {
                     className='dropdown-menu'
                     aria-labelledby='dropdownMenuButton1'>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a
+                        className='dropdown-item'
+                        href='https://github.com/lawlawson'>
                         Target 1
                       </a>
                     </li>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a
+                        className='dropdown-item'
+                        href='https://github.com/lawlawson'>
                         Target 2
                       </a>
                     </li>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a
+                        className='dropdown-item'
+                        href='https://github.com/lawlawson'>
                         Target 3
                       </a>
                     </li>
