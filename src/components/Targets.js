@@ -16,31 +16,15 @@ const Targets = () => {
                     id='dropdownMenuButton1'
                     data-bs-toggle='dropdown'
                     aria-expanded='false'>
-                    Target
+                    Quarter
                   </button>
                   <ul
                     className='dropdown-menu'
                     aria-labelledby='dropdownMenuButton1'>
-                    <li>
-                      <a className='dropdown-item' href='#'>
-                        Quarter 1
-                      </a>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='#'>
-                        Quarter 2
-                      </a>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='#'>
-                        Quarter 3
-                      </a>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='#'>
-                        Quarter 4
-                      </a>
-                    </li>
+                    <li>Quarter 1</li>
+                    <li>Quarter 2</li>
+                    <li>Quarter 3</li>
+                    <li>Quarter 4</li>
                   </ul>
                 </div>
               </div>
