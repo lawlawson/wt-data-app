@@ -11,7 +11,7 @@ function Targets() {
               <div className='card-body'>
                 <div className='dropdown'>
                   <button
-                    className='btn btn-primary dropdown-toggle'
+                    className='btn btn-dark dropdown-toggle'
                     type='button'
                     id='dropdownMenuButton1'
                     data-bs-toggle='dropdown'
@@ -22,23 +22,17 @@ function Targets() {
                     className='dropdown-menu'
                     aria-labelledby='dropdownMenuButton1'>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://www.google.co.uk/'>
+                      <a className='dropdown-item' href='#'>
                         Target 1
                       </a>
                     </li>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://www.google.co.uk/'>
+                      <a className='dropdown-item' href='#'>
                         Target 2
                       </a>
                     </li>
                     <li>
-                      <a
-                        className='dropdown-item'
-                        href='https://www.google.co.uk/'>
+                      <a className='dropdown-item' href='#'>
                         Target 3
                       </a>
                     </li>
