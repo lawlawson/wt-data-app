@@ -13,4 +13,27 @@ body {
 
 h1 {
   color: #fff;
+  margin: 30px 0;
+}
+
+.quarter-target {
+  margin: 20px;
+}
+
+.filters-block {
+  margin: 20px;
+}
+
+.metrics-block {
+  margin: 20px;
+}
+
+.filter-output {
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .filter-output {
+    margin: 0;
+  }
 }

@@ -4,7 +4,7 @@ import '../components/Targets.css';
 const Targets = () => {
   return (
     <div>
-      <div className='container'>
+      <div className='container quarter-target'>
         <div className='row'>
           <div className='col-xs-12'>
             <div className='card'>

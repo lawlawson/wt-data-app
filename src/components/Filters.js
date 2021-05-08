@@ -4,7 +4,7 @@ import '../components/Filters.css';
 const Filters = () => {
   return (
     <div>
-      <div className='container'>
+      <div className='container filters-block'>
         <div className='row'>
           <div className='col-xs-12 col-lg-6'>
             <div className='card filter-card'>
@@ -44,18 +44,13 @@ const Filters = () => {
               </div>
             </div>
           </div>
-          <div className='col-xs-12 col-lg-6'>
+          <div className='col-xs-12 col-lg-6 filter-output'>
             <div className='card'>
               <div className='card-body'>
                 <div className='form-floating'>
-                  <textarea
-                    className='form-control'
-                    placeholder='Leave a comment here'
-                    id='floatingTextarea'
-                    value='Some data should be dynamically rendered here'
-                    readOnly={true}
-                  />
-                  <label htmlFor='floatingTextarea'>Data output</label>
+                  <div className='filter-output'>
+                    This is where the data should go
+                  </div>
                 </div>
               </div>
             </div>
