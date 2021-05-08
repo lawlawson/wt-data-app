@@ -1,7 +1,13 @@
-.recharts-wrapper {
+/* .recharts-wrapper {
   margin: 30px auto;
-}
+} */
 
-.bottom-position {
+/* .bottom-position {
   margin-bottom: 5%;
+} */
+
+@media only screen and (max-width: 768px) {
+  .component {
+    display: none;
+  }
 }

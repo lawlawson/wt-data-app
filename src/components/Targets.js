@@ -6,7 +6,7 @@ const Targets = () => {
     <div>
       <div className='container'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-xs-12'>
             <div className='card'>
               <div className='card-body'>
                 <div className='dropdown'>

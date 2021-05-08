@@ -58,10 +58,10 @@ const data = [
 
 export default function Metrics() {
   return (
-    <>
+    <div className='component'>
       <div className='container'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-xs-12'>
             <div className='card bottom-position'>
               <div className='card-body'>
                 <h5>Metrics</h5>
@@ -93,6 +93,6 @@ export default function Metrics() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

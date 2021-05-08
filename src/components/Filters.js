@@ -6,7 +6,7 @@ const Filters = () => {
     <div>
       <div className='container'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-xs-12 col-lg-6'>
             <div className='card filter-card'>
               <div className='card-body'>
                 <p>Filters</p>
@@ -44,8 +44,7 @@ const Filters = () => {
               </div>
             </div>
           </div>
-
-          <div className='col'>
+          <div className='col-xs-12 col-lg-6'>
             <div className='card'>
               <div className='card-body'>
                 <div className='form-floating'>
