@@ -2,6 +2,39 @@ import React from 'react';
 import '../components/Filters.css';
 
 const Filters = () => {
+  const people = [
+    {
+      id: 1,
+      name: 'Eddy',
+      profession: 'project management',
+      gender: 'male',
+      job_title: 'junior project manager',
+      seniority: 'junior',
+      country: 'UK',
+      age: 28,
+    },
+    {
+      id: 2,
+      name: 'Annie',
+      profession: 'Data Science',
+      gender: 'female',
+      job_title: 'Data Scientist',
+      seniority: 'senior',
+      country: 'USA',
+      age: 31,
+    },
+    {
+      id: 3,
+      name: 'Larry',
+      profession: 'Web',
+      gender: 'male',
+      job_title: 'Web Developer',
+      seniority: 'junior',
+      country: 'UK',
+      age: 21,
+    },
+  ];
+
   return (
     <div>
       <div className='container filters-block'>
@@ -13,11 +46,11 @@ const Filters = () => {
                 <select
                   className='form-select'
                   aria-label='Default select example'>
-                  <option default>Select a field</option>
-                  <option value='1'>Project Managers</option>
-                  <option value='2'>Engineers</option>
-                  <option value='3'>UX/UI Designers</option>
-                  <option value='4'>Data Scientists</option>
+                  <option disabled>Select a field</option>
+                  <option value='1'>Project Manager</option>
+                  <option value='2'>Engineer</option>
+                  <option value='3'>UX/UI Designer</option>
+                  <option value='4'>Data Scientist</option>
                   <option value='5'>Marketing</option>
                 </select>
               </div>
@@ -28,7 +61,7 @@ const Filters = () => {
                     className='form-select'
                     multiple
                     aria-label='multiple select example'>
-                    <option default>Select one or more options</option>
+                    <option disabled>Select one or more options</option>
                     <option value='1'>Gender</option>
                     <option value='2'>Job Title</option>
                     <option value='3'>Seniority</option>
@@ -37,7 +70,10 @@ const Filters = () => {
                   </select>
                 </div>
                 <div>
-                  <button type='button' className='btn btn-success'>
+                  <button
+                    type='submit'
+                    value='Submit'
+                    className='btn btn-success'>
                     Apply
                   </button>
                 </div>
@@ -49,7 +85,17 @@ const Filters = () => {
               <div className='card-body'>
                 <div className='form-floating'>
                   <div className='filter-output'>
-                    This is where the data should go
+                    <b>This is where the data should go:</b>
+                    {people.map((person, index) => (
+                      <li className='display-items' key={index}>
+                        {person.name}
+                      </li>
+                    ))}
+                    {/* {people
+                      .filter((person) => person.seniority === 'junior')
+                      .map((filteredPerson, index) => (
+                        <li key={index}>{filteredPerson.name}</li>
+                      ))} */}
                   </div>
                 </div>
               </div>
