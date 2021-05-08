@@ -1,6 +1,7 @@
 .App {
   margin-top: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 /* .card {
@@ -17,15 +18,15 @@ h1 {
 }
 
 .quarter-target {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .filters-block {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .metrics-block {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .filter-output {

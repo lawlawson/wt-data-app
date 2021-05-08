@@ -1,10 +1,14 @@
-/* .recharts-wrapper {
+.recharts-wrapper {
   margin: 30px auto;
-} */
+}
 
 /* .bottom-position {
   margin-bottom: 5%;
 } */
+
+.metrics-block {
+  margin-top: 20px;
+}
 
 @media only screen and (max-width: 767px) {
   .component {
