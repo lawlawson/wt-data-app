@@ -107,6 +107,7 @@ const Filters = () => {
                         ) {
                           return person;
                         }
+                        return null;
                       })
                       .map((person, index) => (
                         <div className='display-items-listed' key={index}>
