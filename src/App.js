@@ -1,6 +1,6 @@
-import Targets from './components/Targets';
-import Filters from './components/Filters';
-import Metrics from './components/Metrics';
+import Targets from './components/Targets/Targets';
+import Filters from './components/Filters/Filters';
+import Metrics from './components/Metrics/Metrics';
 
 import './App.css';
 

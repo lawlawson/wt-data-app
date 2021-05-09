@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Metrics.css';
+import '../Metrics/Metrics.css';
 
 import {
   LineChart,
