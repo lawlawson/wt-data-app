@@ -1,7 +1,10 @@
 import React from 'react';
 import '../components/Filters.css';
+import { useState } from 'react';
 
 const Filters = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
   const people = [
     {
       id: 1,
@@ -43,6 +46,13 @@ const Filters = () => {
             <div className='card filter-card'>
               <div className='card-body'>
                 <p>Filters</p>
+                <input
+                  type='text'
+                  placeholder='search...'
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                  }}
+                />
                 <select
                   className='form-select'
                   aria-label='Default select example'>
@@ -86,11 +96,23 @@ const Filters = () => {
                 <div className='form-floating'>
                   <div className='filter-output'>
                     <b>This is where the data should go:</b>
-                    {people.map((person, index) => (
-                      <li className='display-items' key={index}>
-                        {person.name}
-                      </li>
-                    ))}
+                    {people
+                      .filter((person) => {
+                        if (searchTerm === '') {
+                          return person;
+                        } else if (
+                          person.name
+                            .toLowerCase()
+                            .includes(searchTerm.toLowerCase())
+                        ) {
+                          return person;
+                        }
+                      })
+                      .map((person, index) => (
+                        <div className='display-items-listed' key={index}>
+                          {person.name}
+                        </div>
+                      ))}
                     {/* {people
                       .filter((person) => person.seniority === 'junior')
                       .map((filteredPerson, index) => (
