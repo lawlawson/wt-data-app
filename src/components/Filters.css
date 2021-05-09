@@ -4,9 +4,17 @@
 }
 
 .filter-output {
-  height: 362px;
+  height: 388px;
 }
 
 .display-items {
   margin-top: 30px;
+}
+
+input {
+  margin-bottom: 20px;
+  border-radius: 5px 5px;
+  padding: 5px 5px;
+  width: 100%;
+  border: 1px solid lightgray;
 }

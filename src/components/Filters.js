@@ -48,7 +48,7 @@ const Filters = () => {
                 <p>Filters</p>
                 <input
                   type='text'
-                  placeholder='search...'
+                  placeholder='search employees...'
                   onChange={(e) => {
                     setSearchTerm(e.target.value);
                   }}
@@ -95,7 +95,7 @@ const Filters = () => {
               <div className='card-body'>
                 <div className='form-floating'>
                   <div className='filter-output'>
-                    <b>This is where the data should go:</b>
+                    <b>List of employees:</b>
                     {people
                       .filter((person) => {
                         if (searchTerm === '') {
