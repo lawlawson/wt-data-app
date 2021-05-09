@@ -8,7 +8,6 @@ const Filters = () => {
 
   const professionChangeHandler = (e) => {
     setSelectProfession(e.target.value);
-    console.log(e);
   };
 
   const people = [
@@ -28,7 +27,7 @@ const Filters = () => {
       profession: 'Data Science',
       gender: 'Female',
       job_title: 'Data Scientist',
-      seniority: 'senior',
+      seniority: 'Senior',
       country: 'USA',
       age: 31,
     },
@@ -51,6 +50,36 @@ const Filters = () => {
       seniority: 'Senior',
       country: 'UK',
       age: 28,
+    },
+    {
+      id: 5,
+      name: 'Dominic',
+      profession: 'Marketing',
+      gender: 'Male',
+      job_title: 'Marketing Manager',
+      seniority: 'Senior',
+      country: 'USA',
+      age: 35,
+    },
+    {
+      id: 6,
+      name: 'Allison',
+      profession: 'UX/UI',
+      gender: 'Female',
+      job_title: 'Senior Designer',
+      seniority: 'Senior',
+      country: 'UK',
+      age: 32,
+    },
+    {
+      id: 7,
+      name: 'Nick',
+      profession: 'Data Science',
+      gender: 'Male',
+      job_title: 'Data Scientist',
+      seniority: 'Junior',
+      country: 'USA',
+      age: 19,
     },
   ];
 
@@ -75,10 +104,10 @@ const Filters = () => {
                   onChange={professionChangeHandler}>
                   <option disabled>Select a field</option>
                   <option value='Project Management'>Project Manager</option>
-                  <option value='Engineer'>Engineer</option>
                   <option value='UX/UI'>UX/UI Designer</option>
                   <option value='Data Science'>Data Scientist</option>
                   <option value='Marketing'>Marketing</option>
+                  <option value='Web Developer'>Web Developer</option>
                 </select>
               </div>
               <div className='card'>
