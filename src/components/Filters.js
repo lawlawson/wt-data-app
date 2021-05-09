@@ -4,14 +4,20 @@ import { useState } from 'react';
 
 const Filters = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectProfession, setSelectProfession] = useState('');
+
+  const professionChangeHandler = (e) => {
+    setSelectProfession(e.target.value);
+    console.log(e);
+  };
 
   const people = [
     {
       id: 1,
       name: 'Eddy',
-      profession: 'project management',
-      gender: 'male',
-      job_title: 'junior project manager',
+      profession: 'Project Management',
+      gender: 'Male',
+      job_title: 'Junior Project Manager',
       seniority: 'junior',
       country: 'UK',
       age: 28,
@@ -20,7 +26,7 @@ const Filters = () => {
       id: 2,
       name: 'Annie',
       profession: 'Data Science',
-      gender: 'female',
+      gender: 'Female',
       job_title: 'Data Scientist',
       seniority: 'senior',
       country: 'USA',
@@ -29,12 +35,22 @@ const Filters = () => {
     {
       id: 3,
       name: 'Larry',
-      profession: 'Web',
-      gender: 'male',
+      profession: 'Web Developer',
+      gender: 'Male',
       job_title: 'Web Developer',
       seniority: 'junior',
       country: 'UK',
       age: 21,
+    },
+    {
+      id: 4,
+      name: 'Jenny',
+      profession: 'Project Management',
+      gender: 'Female',
+      job_title: 'Senior Project Manager',
+      seniority: 'Senior',
+      country: 'UK',
+      age: 28,
     },
   ];
 
@@ -55,13 +71,14 @@ const Filters = () => {
                 />
                 <select
                   className='form-select'
-                  aria-label='Default select example'>
+                  aria-label='Default select example'
+                  onChange={professionChangeHandler}>
                   <option disabled>Select a field</option>
-                  <option value='1'>Project Manager</option>
-                  <option value='2'>Engineer</option>
-                  <option value='3'>UX/UI Designer</option>
-                  <option value='4'>Data Scientist</option>
-                  <option value='5'>Marketing</option>
+                  <option value='Project Management'>Project Manager</option>
+                  <option value='Engineer'>Engineer</option>
+                  <option value='UX/UI'>UX/UI Designer</option>
+                  <option value='Data Science'>Data Scientist</option>
+                  <option value='Marketing'>Marketing</option>
                 </select>
               </div>
               <div className='card'>
@@ -111,14 +128,18 @@ const Filters = () => {
                       })
                       .map((person, index) => (
                         <div className='display-items-listed' key={index}>
-                          {person.name}
+                          {person.name}&nbsp;-{person.job_title}&nbsp;-
+                          {person.gender}&nbsp;-{person.country}
                         </div>
                       ))}
-                    {/* {people
-                      .filter((person) => person.seniority === 'junior')
-                      .map((filteredPerson, index) => (
-                        <li key={index}>{filteredPerson.name}</li>
-                      ))} */}
+                    <div>
+                      <b>Employees by job:&nbsp;</b>
+                      {people.map((person) =>
+                        selectProfession === person.profession
+                          ? person.name
+                          : ''
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
