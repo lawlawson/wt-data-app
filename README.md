@@ -1,6 +1,12 @@
-#Assignment for the position of Junior Front-end Developer at the Data Science team at Wunderman Thompson London
+# Assignment for the position of Junior Front-end Developer at the Data Science team at Wunderman Thompson London
 
 **May 2021**
+
+## Install Dependencies
+
+To install the required dependencies user the following command:
+
+`npm install`
 
 ## Main ask
 
