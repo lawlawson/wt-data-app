@@ -7,11 +7,11 @@ const Targets = () => {
       <div className='container quarter-target'>
         <div className='row'>
           <div className='col-xs-12'>
-            <div className='card'>
+            <div className='card-quarter'>
               <div className='card-body'>
                 <div className='dropdown'>
                   <button
-                    className='btn btn-danger dropdown-toggle'
+                    className='btn btn-warning dropdown-toggle'
                     type='button'
                     id='dropdownMenuButton1'
                     data-bs-toggle='dropdown'

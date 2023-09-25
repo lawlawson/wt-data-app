@@ -93,7 +93,7 @@ const Filters = () => {
                 <p>Filters</p>
                 <input
                   type='text'
-                  placeholder='search employees...'
+                  placeholder='Search employee name...'
                   onChange={(e) => {
                     setSearchTerm(e.target.value);
                   }}

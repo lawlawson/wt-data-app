@@ -1,5 +1,3 @@
-# Assignment for a Junior Frontend Developer positon
-
 ## About
 I was given a written brief and asked to design and build a small program with minimal functionality that takes employee data and allows the users to search and filter data based on certain requirements. 
 
@@ -13,4 +11,4 @@ To install the required dependencies user the following command:
 
 Once dependencies have been installed you have to run the application. Do this with the following command:
 
-`npm run`
+`npm start`
