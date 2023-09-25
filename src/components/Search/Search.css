@@ -4,11 +4,20 @@
 }
 
 .filter-output {
-  height: 388px;
+  height: 100%;
 }
 
 .display-items {
   margin-top: 30px;
+}
+
+.display-items-listed {
+  border: 1px solid #d4d0d0;
+  padding: 20px 0;
+}
+
+.employee-profile span {
+  font-weight: bold;
 }
 
 input {

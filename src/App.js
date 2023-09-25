@@ -7,8 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <h1 className='display-1'>Employee Records</h1>
-      <Targets />
+      <h1>Team Members</h1>
       <Filters />
       <Metrics />
     </div>

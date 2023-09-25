@@ -13,24 +13,5 @@ h1 {
   margin: 30px 0;
 }
 
-.quarter-target {
-  margin: 20px auto;
-}
-
-.filters-block {
-  margin: 20px auto;
-}
-
-.metrics-block {
-  margin: 20px auto;
-}
-
-.filter-output {
-  margin: 20px 0;
-}
-
 @media only screen and (min-width: 769px) {
-  .filter-output {
-    margin: 0;
-  }
 }
