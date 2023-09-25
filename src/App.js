@@ -1,5 +1,5 @@
 import Targets from './components/Targets/Targets';
-import Filters from './components/Filters/Filters';
+import Filters from './components/Search/Search';
 import Metrics from './components/Metrics/Metrics';
 
 import './App.css';

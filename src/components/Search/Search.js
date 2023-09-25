@@ -1,8 +1,8 @@
 import React from 'react';
-import '../Filters/Filters.css';
+import './Search.css';
 import { useState } from 'react';
 
-const Filters = () => {
+const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectProfession, setSelectProfession] = useState('');
 
@@ -90,7 +90,7 @@ const Filters = () => {
           <div className='col-xs-12 col-lg-6'>
             <div className='card filter-card'>
               <div className='card-body'>
-                <p>Filters</p>
+                <p>Employee search</p>
                 <input
                   type='text'
                   placeholder='Search employee name...'
@@ -180,4 +180,4 @@ const Filters = () => {
   );
 };
 
-export default Filters;
+export default Search;
